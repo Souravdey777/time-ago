@@ -1,4 +1,4 @@
-# time-ago
+# 🕒time-ago
 
 get the time difference with current time with a simple function
 
