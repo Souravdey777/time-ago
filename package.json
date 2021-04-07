@@ -1,11 +1,25 @@
 {
   "name": "@souravdey/time-ago",
   "version": "1.0.1",
-  "description": "a time difference with current time",
+  "description": "get the time difference with current time with a simple function",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Souravdey777/time-ago.git"
+  },
+  "keywords": [
+    "time-ago",
+    "time",
+    "difference",
+    "ago"
+  ],
   "author": "Sourav Dey",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Souravdey777/time-ago/issues"
+  },
+  "homepage": "https://github.com/Souravdey777/time-ago#readme"
 }
