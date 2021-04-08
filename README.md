@@ -20,7 +20,7 @@ console.log(timeAgo) // output eg. 21 minutes
 console.log(timeAgoAbbreviation) // output eg. 21 mins
 ```
 
-#### params for the function
+#### Params for the function
 
 - unixtimestamp in miliseconds eg. 1617799359000
 - abbreviation as `true` or `false`. It is not a mandatory feild and default value is false. If passed true it will abbreviate the units eg. minutes to mins.
