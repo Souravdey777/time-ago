@@ -5,30 +5,30 @@ const SECOND = 1000,
     MONTH = DAY * 30,
     YEAR = DAY * 365;
 
-function getTimeAgoString (timestamp) {
+function getTimeAgoString(timestamp, short = false) {
     const elapsed = Date.now() - timestamp,
-        getElapsedString =(value, unit)=> {
+        getElapsedString = (value, unit) => {
             const round = Math.round(elapsed / value);
             return `${round} ${unit}${round > 1
                 ? 's'
                 : ''}`;
         };
     if (elapsed < MINUTE) {
-        return getElapsedString(SECOND, 'second');
+        return getElapsedString(SECOND, short ? 'sec' : 'second');
     }
     if (elapsed < HOUR) {
-        return getElapsedString(MINUTE, 'minute');
+        return getElapsedString(MINUTE, short ? 'min' : 'minute');
     }
     if (elapsed < DAY) {
-        return getElapsedString(HOUR, 'hour');
+        return getElapsedString(HOUR, short ? 'hr' : 'hour');
     }
     if (elapsed < MONTH) {
-        return getElapsedString(DAY, 'day');
+        return getElapsedString(DAY, short ? 'd' : 'day');
     }
     if (elapsed < YEAR) {
-        return getElapsedString(MONTH, 'month');
+        return getElapsedString(MONTH, short ? 'mth' : 'month');
     }
-    return getElapsedString(YEAR, 'year');
+    return getElapsedString(YEAR, short ? 'yr' : 'year');
 };
 
 module.exports = getTimeAgoString
