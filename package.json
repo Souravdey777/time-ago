@@ -1,6 +1,6 @@
 {
   "name": "@souravdey/time-ago",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "get the time difference with current time with a simple function",
   "main": "index.js",
   "scripts": {
