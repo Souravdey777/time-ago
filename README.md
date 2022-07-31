@@ -1,4 +1,4 @@
-# 🕒time-ago
+# 🕒 time-ago
 
 Get the time difference with current time as string with a simple npm package.
 
